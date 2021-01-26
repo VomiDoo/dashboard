@@ -1,5 +1,11 @@
 .main{
     grid-area: main;
     display: grid;
+    padding-left: 50px;
     grid-template: 137px 180px 274px 289px / 100%;
+    grid-template-areas: 'header'
+                         'cards'
+                         'reachs'
+                         'gender-geo';
+    color: #4F4F4F;
 }

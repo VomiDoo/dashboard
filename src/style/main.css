@@ -366,6 +366,7 @@ textarea {
   width: 1280px;
   height: 880px;
   margin: 5% auto;
+  font-family: 'Poppins', sans-serif;
   background-color: #EFF3F9;
   border-radius: 14px;
   -ms-grid-rows: 100%;
@@ -569,9 +570,12 @@ textarea {
   grid-area: main;
   display: -ms-grid;
   display: grid;
+  padding-left: 50px;
   -ms-grid-rows: 137px 180px 274px 289px;
   -ms-grid-columns: 100%;
       grid-template: 137px 180px 274px 289px / 100%;
+      grid-template-areas: 'header' 'cards' 'reachs' 'gender-geo';
+  color: #4F4F4F;
 }
 
 .header {
@@ -581,9 +585,19 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.header .header__title {
+  margin-right: 45px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .header .header__search {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,6 +605,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   height: 32px;
+  margin-right: 573px;
   background-color: #FDFDFF;
   border: 1px solid #EBEBEB;
   border-radius: 8px;
@@ -598,14 +613,57 @@ textarea {
 
 .header .header__search .header__button {
   width: 38px;
-  background-color: transparent;
+  height: 100%;
+  background: url(/src/img/header/search.svg) no-repeat center, transparent;
   cursor: pointer;
   outline: none;
   border: none;
 }
 
 .header .header__search .search {
+  width: 120px;
   font-size: 12px;
   border: none;
+}
+
+.header .header__search::after {
+  content: '';
+  position: absolute;
+  left: 190px;
+  width: 22px;
+  height: 22px;
+  background: url(/src/img/header/bell.svg) no-repeat center;
+  cursor: pointer;
+}
+
+.header .name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header .name::before {
+  content: '';
+  position: absolute;
+  left: 62px;
+  width: 50px;
+  height: 50px;
+  background: url(/src/img/header/avatar-anya.svg) no-repeat center;
+}
+
+.header .name::after {
+  content: '';
+  position: absolute;
+  left: 120px;
+  width: 8px;
+  height: 4px;
+  background: url(/src/img/header/dropdown.svg) no-repeat center;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

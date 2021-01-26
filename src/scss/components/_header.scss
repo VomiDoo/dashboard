@@ -3,32 +3,75 @@
 .header{
     display: flex;
     align-items: center;
+    grid-area: header;
 
-    // .header__title{
-
-    // }
+    .header__title{
+        margin-right: 45px;
+        font-size: 30px;
+        font-weight: $font-width-semi-bold;
+    }
 
 
     .header__search{
+        position: relative;
         display: flex;
         align-items: center;
         height: 32px;
+        margin-right: 573px;
         background-color: $white-color;
         border: 1px solid $border-color;
         border-radius: 8px;
 
         .header__button{
             width: 38px;
-            background-color: transparent;
+            height: 100%;
+            background: url(/src/img/header/search.svg) no-repeat center, transparent;
             cursor: pointer;
             outline: none;
             border: none;
         }
 
         .search{
+            width: 120px;
             font-size: 12px;
             border: none;
         }
     
+    }
+    .header__search::after{
+        content: '';
+        position: absolute;
+        left: 190px;
+        width: 22px;
+        height: 22px;
+        background: url(/src/img/header/bell.svg) no-repeat center;
+        cursor: pointer;
+    }
+
+    .name{
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: $font-width-medium;
+    }
+    
+    .name::before{
+        content: '';
+        position: absolute;
+        left: 62px;
+        width: 50px;
+        height: 50px;
+        background: url(/src/img/header/avatar-anya.svg) no-repeat center;
+    }
+
+    .name::after{
+        content: '';
+        position: absolute;
+        left: 120px;
+        width: 8px;
+        height: 4px;
+        background: url(/src/img/header/dropdown.svg) no-repeat center;
+        cursor: pointer;
     }
 }
