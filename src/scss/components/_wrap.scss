@@ -1,0 +1,11 @@
+
+.wrap{
+    display: grid;
+    width: 1280px;
+    height: 880px;
+    margin: 5% auto;
+    background-color: #EFF3F9;
+    border-radius: 14px;
+    grid-template: 100% /100px 1280px;
+    grid-template-areas: 'nav  main';
+}

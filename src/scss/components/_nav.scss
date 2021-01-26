@@ -1,0 +1,134 @@
+// Nav cotent====================================
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 880px;
+    background-color: $white-color;
+    border-radius: 14px 0 0 14px;
+    
+
+    .nav__bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 430px;
+    }
+
+    .nav__button{
+        width: 100%;
+        height: 50px;
+        padding-top: 15px;
+        font-size: 40px;
+        color: transparent;
+    }
+
+    .nav__button:hover{
+        background-color: rgba(127, 127, 213, 0.5);
+        border-left: 5px solid $violet-color;
+    }
+
+
+    .nav__button--home{
+        background: url(/src/img/nav__button/home.svg) no-repeat center;
+    }
+
+    .nav__button--news{
+        background: url(/src/img/nav__button/news.svg) no-repeat center;
+    }
+
+    .nav__button--friends{
+        background: url(/src/img/nav__button/friends.svg) no-repeat center;
+    }
+
+    .nav__button--message{
+        background: url(/src/img/nav__button/message.svg) no-repeat center;
+    }
+
+    .nav__button--music{
+        background: url(/src/img/nav__button/music.svg) no-repeat center;
+    }
+
+    .nav__button--statistic{
+        background: url(/src/img/nav__button/statistic.svg) no-repeat center;
+    }
+
+    .nav__button--settings{
+        background: url(/src/img/nav__button/settings.svg) no-repeat center;
+    }
+
+    .nav__img{
+        margin-left: 36px;
+    }
+
+    input[type='checkbox']{
+        visibility: hidden;
+        display: none;
+    }
+    
+    .check {
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 0.5px solid $violet-color;
+        border-radius: 50px;
+        overflow: hidden;
+        transition: ease-in .6s;
+    }
+    
+    input[type='checkbox']:checked ~ .check {
+        background-color: $violet-color;
+    }
+    
+    .check:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        background: url(/src/img/nav__button/moon.svg) no-repeat center, $violet-color;
+        border-radius: 50%;
+        transition: .6s;
+    }
+    
+    input[type='checkbox']:checked ~ .check:before {
+        transform: translateX(-50px);
+    }
+    
+    .check:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        background: url(/src/img/nav__button/circle.svg) no-repeat center, $white-color;
+        border-radius: 50%;
+        transition: .6s;
+        transform: translateX(50px);
+    
+    }
+    
+    input[type='checkbox']:checked ~ .check:after {
+        transform: translateX(0px);
+    }
+
+}
+
+
+
+
+
+
+
+
