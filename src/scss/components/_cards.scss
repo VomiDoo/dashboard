@@ -1,0 +1,44 @@
+
+
+.cards{
+    grid-area: cards;
+    display: inline-flex;
+    padding-right: 45px;
+    justify-content: space-between;
+
+
+    .card{
+        width: 293px;
+        height: 100px;
+        padding: 24px;
+        background-color: $white-color;
+        border-radius: 13px;
+        
+
+            .card__title{
+                font-size: 20px;
+                font-weight: $font-width-semi-bold;
+            }
+
+            .card__people{
+                font-size: 20px;
+                font-weight: $font-width-medium;
+            }
+
+            // .card__percent{
+            // }
+    }
+    
+    ul{
+        text-align: left;
+        width: 25px;
+        display: inline-flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    li{
+        color: #979797;
+        list-style-type: disc;
+    }
+}

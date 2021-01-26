@@ -453,7 +453,8 @@ textarea {
 }
 
 .nav .nav__button:hover {
-  background-color: rgba(127, 127, 213, 0.5);
+  -webkit-filter: invert(51%) sepia(76%) saturate(330%) hue-rotate(201deg) brightness(89%) contrast(89%);
+          filter: invert(51%) sepia(76%) saturate(330%) hue-rotate(201deg) brightness(89%) contrast(89%);
   border-left: 5px solid #7F7FD5;
 }
 
@@ -479,6 +480,7 @@ textarea {
 
 .nav .nav__button--statistic {
   background: url(/src/img/nav__button/statistic.svg) no-repeat center;
+  border-left: 5px solid #7F7FD5;
 }
 
 .nav .nav__button--settings {
@@ -564,7 +566,7 @@ textarea {
   z-index: -1;
 }
 
-.main {
+.container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: main;
@@ -651,7 +653,7 @@ textarea {
 .header .name::before {
   content: '';
   position: absolute;
-  left: 62px;
+  left: 80px;
   width: 50px;
   height: 50px;
   background: url(/src/img/header/avatar-anya.svg) no-repeat center;
@@ -660,10 +662,58 @@ textarea {
 .header .name::after {
   content: '';
   position: absolute;
-  left: 120px;
+  left: 150px;
   width: 8px;
   height: 4px;
   background: url(/src/img/header/dropdown.svg) no-repeat center;
   cursor: pointer;
+}
+
+.cards {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cards;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-right: 45px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards .card {
+  width: 293px;
+  height: 100px;
+  padding: 24px;
+  background-color: #FDFDFF;
+  border-radius: 13px;
+}
+
+.cards .card .card__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cards .card .card__people {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cards ul {
+  text-align: left;
+  width: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.cards li {
+  color: #979797;
+  list-style-type: disc;
 }
 /*# sourceMappingURL=main.css.map */
