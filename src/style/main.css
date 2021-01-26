@@ -360,6 +360,7 @@ textarea {
 }
 
 .wrap {
+  position: relative;
   display: -ms-grid;
   display: grid;
   width: 1280px;
@@ -371,6 +372,34 @@ textarea {
   -ms-grid-columns: 100px 1280px;
       grid-template: 100% /100px 1280px;
       grid-template-areas: 'nav  main';
+}
+
+.wrap::before {
+  content: '';
+  position: absolute;
+  bottom: 400px;
+  left: 200px;
+  width: 806px;
+  height: 806px;
+  margin: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#7F7FD5), to(#E786D7));
+  background: linear-gradient(0.25turn, #7F7FD5, #E786D7);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.wrap::after {
+  content: '';
+  position: absolute;
+  top: 740px;
+  left: 993px;
+  width: 415px;
+  height: 415px;
+  margin: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7F7FD5), to(#E786D7));
+  background: linear-gradient(#7F7FD5, #E786D7);
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .nav {
