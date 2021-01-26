@@ -1,6 +1,7 @@
 // Nav cotent====================================
 
 .nav{
+    position: relative;
     grid-area: nav;
     display: flex;
     flex-direction: column;
@@ -10,6 +11,8 @@
     height: 880px;
     background-color: $white-color;
     border-radius: 14px 0 0 14px;
+
+    
     
 
     .nav__bar{
@@ -123,6 +126,19 @@
         transform: translateX(0px);
     }
 
+}
+
+.nav::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    width: 460px;
+    height: 460px;
+    margin: 50px;
+    background: linear-gradient($violet-color, $pink-color);
+    border-radius: 50%;
+    z-index: -1;
 }
 
 
