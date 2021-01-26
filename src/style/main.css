@@ -369,8 +369,8 @@ textarea {
   background-color: #EFF3F9;
   border-radius: 14px;
   -ms-grid-rows: 100%;
-  -ms-grid-columns: 100px 1280px;
-      grid-template: 100% /100px 1280px;
+  -ms-grid-columns: 100px 1180px;
+      grid-template: 100% /100px 1180px;
       grid-template-areas: 'nav  main';
 }
 
