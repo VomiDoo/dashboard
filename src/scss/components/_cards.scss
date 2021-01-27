@@ -3,42 +3,63 @@
 .cards{
     grid-area: cards;
     display: inline-flex;
-    padding-right: 45px;
     justify-content: space-between;
+    padding-right: 45px;
 
 
     .card{
+        display: grid;
         width: 293px;
         height: 100px;
         padding: 24px;
         background-color: $white-color;
         border-radius: 13px;
-        
+        grid-template: repeat(4, 25%) / 60% 40%;
+        grid-template-areas: 'title drops'
+                             '.  .'
+                             '.  .'
+                             'people percent' ;
 
             .card__title{
+                grid-area: title;
                 font-size: 20px;
                 font-weight: $font-width-semi-bold;
             }
 
             .card__people{
+                grid-area: people;
                 font-size: 20px;
                 font-weight: $font-width-medium;
             }
 
-            // .card__percent{
-            // }
+            .card__percent{
+                grid-area: percent;
+                margin-right: 5px;
+                text-align: right;
+
+                img{
+                    margin-bottom: 3px;
+                }
+            }
+
+            .drops{
+                text-align: right;
+            }
+            
+            ul{
+                grid-area: drops;
+                display: inline-flex;
+                justify-content: space-between;
+                width: 25px;
+                text-align: left;
+                cursor: pointer;
+            }
+            
+            li{
+                color: #979797;
+                list-style-type: disc;
+            }
     }
     
-    ul{
-        text-align: left;
-        width: 25px;
-        display: inline-flex;
-        justify-content: space-between;
-        cursor: pointer;
-    }
-
-    li{
-        color: #979797;
-        list-style-type: disc;
-    }
+    
 }
