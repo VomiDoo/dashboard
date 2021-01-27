@@ -1,0 +1,58 @@
+
+
+.gender-geo{
+    grid-area: gender-geo;
+    display: grid;
+    grid-template: 100% / 675px 31px 381px;
+    grid-template-areas: 'gender . geo' ;
+}
+
+.gender{
+    grid-area: gender;
+    padding: 23px 35px 1.5px 24px;
+    background: $white-color;
+}
+
+
+.geo{
+    grid-area: geo;
+    display: grid;
+    padding: 23px 24px 30px 25px;
+    background: $white-color;
+    grid-template: 70px 54px 54px 64px / 50% 50%;
+    grid-template-areas: 'geo__title geo__subtitle'
+                         'geo__russia geo__china'
+                         'geo__ukraine geo__usa'
+                         'geo__mangolia geo__other';
+    .geo__title{
+        grid-area: geo__title;
+    }
+
+    .geo__subtitle{
+        grid-area: geo__subtitle;
+    }
+
+    .geo__russia{
+        grid-area: geo__russia;
+    }
+
+    .geo__china{
+        grid-area: geo__china;
+    }
+
+    .geo__ukraine{
+        grid-area: geo__ukraine;
+    }
+
+    .geo__usa{
+        grid-area: geo__usa;
+    }
+
+    .geo__mangolia{
+        grid-area: geo__mangolia;
+    }
+
+    .geo__other{
+        grid-area: geo__other;
+    }
+}
