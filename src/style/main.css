@@ -776,6 +776,7 @@ textarea {
   padding: 27px 28px 22px 24px;
   background-color: #FDFDFF;
   border-radius: 13px;
+  overflow-x: auto;
   -ms-grid-rows: 79px 1fr;
   -ms-grid-columns: 372px 1fr;
       grid-template: 79px 1fr / 372px 1fr;

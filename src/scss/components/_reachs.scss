@@ -19,6 +19,7 @@
     padding: 27px 28px 22px 24px;
     background-color: $white-color;
     border-radius: 13px;
+    overflow-x: auto;
     grid-template: 79px 1fr / 372px 1fr;
     grid-template-areas: 'audience__title audience__form'
                          'audience__image audience__image';
