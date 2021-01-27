@@ -3,7 +3,7 @@
 .reachs{
     grid-area: reachs;
     display: grid;
-    grid-template: 100% / 768px 32px 288px;
+    grid-template: 242px / 768px 32px 288px;
     grid-template-areas: 'audience . by-device';
 
     .reachs__title{
@@ -20,9 +20,13 @@
     background-color: $white-color;
     border-radius: 13px;
     overflow-x: auto;
-    grid-template: 79px 1fr / 372px 1fr;
+    grid-template: 20px 1fr / 372px 1fr;
     grid-template-areas: 'audience__title audience__form'
                          'audience__image audience__image';
+    
+    .reach__data{
+        cursor: pointer;
+    }
 
     .audience__form{
         grid-area: audience__form;
@@ -38,10 +42,12 @@
 
         .total__input{
             margin-right: 5px;
+            cursor: pointer;
         }
 
         .follower__input{
             margin-right: 5px;
+            cursor: pointer;
         }
     }
 
