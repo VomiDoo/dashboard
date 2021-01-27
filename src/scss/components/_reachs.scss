@@ -1,0 +1,149 @@
+
+
+.reachs{
+    grid-area: reachs;
+    display: grid;
+    grid-template: 100% / 768px 32px 288px;
+    grid-template-areas: 'audience . by-device';
+
+    .reachs__title{
+        font-size: 20px;
+        font-weight: $font-width-semi-bold;
+    }
+
+}
+
+.reach__audience{
+    grid-area: audience;
+    display: grid;
+    padding: 27px 28px 22px 24px;
+    background-color: $white-color;
+    border-radius: 13px;
+    grid-template: 79px 1fr / 372px 1fr;
+    grid-template-areas: 'audience__title audience__form'
+                         'audience__image audience__image';
+
+    .audience__form{
+        grid-area: audience__form;
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 500;
+
+        .reach__input{
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .total__input{
+            margin-right: 5px;
+        }
+
+        .follower__input{
+            margin-right: 5px;
+        }
+    }
+
+    .audience__drid-name{
+        grid-area: audience__title;
+    }
+
+    .audience__image{
+        grid-area: audience__image;
+        width: 100%;
+        height: 100%;
+        background: url(/src/img/charts/audience__reach.jpg) no-repeat center;
+    }
+}
+
+.reach__by-device{
+    grid-area: by-device;
+    display: grid;
+    padding: 22px 10px 31px 22px;
+    background-color: $white-color;
+    border-radius: 13px;
+    grid-template: 72px 1fr /1fr 108px;
+    grid-template-areas: 'by-device__title by-device__title'
+                         'by-device__image by-device__inform';
+
+    .by-device__grid-name{
+        grid-area: by-device__title;
+    }
+
+    .by-device__image{
+        grid-area: by-device__image;
+        position: relative;
+    }
+
+    .by-device__image::before{
+        content: '';
+        position: absolute;
+        top: 10%;
+        width: 121px;
+        height: 121px;
+        background: url(/src/img/charts/device-circle.svg) no-repeat center;
+    }
+
+    .by-device__image::after{
+        content: '';
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        width: 61px;
+        height: 47px;
+        background: url(/src/img/charts/device-triangle.svg) no-repeat center;
+    }
+
+    .violet-percent{
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        font-size: 12px;
+        color: #FDFDFF;
+    }
+
+    .pink-percent{
+        position: absolute;
+        top: 30%;
+        left: 70%;
+        font-size: 12px;
+        color: #FDFDFF;
+        z-index: 5;
+    }
+
+    .by-device__inform{
+        grid-area: by-device__inform;
+        font-size: 12px;
+
+        .pink{
+            position: relative;
+            margin-bottom: 11px;
+            margin-left: 20px;
+        }
+
+        .pink::before{
+            content: '';
+            position: absolute;
+            right: 100px;
+            width: 15px;
+            height: 16px;
+            border-radius: 5px;
+            background-color: $pink-color;
+        }
+
+        .violet{
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .violet::before{
+            content: '';
+            position: absolute;
+            right: 100px;
+            width: 15px;
+            height: 16px;
+            border-radius: 5px;
+            background-color: $violet-color;
+        }
+    }
+}
