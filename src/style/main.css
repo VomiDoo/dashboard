@@ -696,14 +696,6 @@ textarea {
       grid-template-areas: 'title drops' '.  .' '.  .' 'people percent';
 }
 
-.cards .card .card__title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: title;
-  font-size: 20px;
-  font-weight: 600;
-}
-
 .cards .card .card__people {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -746,5 +738,13 @@ textarea {
 .cards .card li {
   color: #979797;
   list-style-type: disc;
+}
+
+.card__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  font-size: 20px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

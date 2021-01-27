@@ -20,11 +20,7 @@
                              '.  .'
                              'people percent' ;
 
-            .card__title{
-                grid-area: title;
-                font-size: 20px;
-                font-weight: $font-width-semi-bold;
-            }
+            
 
             .card__people{
                 grid-area: people;
@@ -62,4 +58,10 @@
     }
     
     
+}
+
+.card__title{
+    grid-area: title;
+    font-size: 20px;
+    font-weight: $font-width-semi-bold;
 }
