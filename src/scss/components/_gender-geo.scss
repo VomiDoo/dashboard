@@ -14,7 +14,7 @@
     background: $white-color;
     border-radius: 13px;
     overflow-x: auto;
-    grid-template: 40px 1fr / 194px 335px 1fr;
+    grid-template: 40px 1fr / 194px 320px 1fr;
     grid-template-areas: 'gender__title . gender__inform'
                          'gender__image gender__image gender__image';
     
@@ -61,8 +61,246 @@
 
     .gender__image{
         grid-area: gender__image;
-        background: url(../img/charts/gender-age.svg) no-repeat;
-    }
+        display: grid;
+        grid-template-rows: 60px 60px 30px;
+        grid-template-columns: 40px repeat(8, 73px);
+        font-size: 12px;
+        color: #979797;
+        }
+
+        .gender__grid-box{
+            border: 1px solid#EFF3F9;
+        }
+        
+        .gender__grid-box--percent{
+            position: relative;
+            border: none;
+        }
+
+        .gender__grid-box--age{
+            position: relative;
+            border: none;
+        }
+
+        .gender__percent{
+            position: absolute;
+            top: -5px;
+        }
+
+        .gender__age{
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            margin: 0 auto;
+        }
+
+        .box--one{
+            position: relative;
+        }
+
+        .box--one::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 2px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--one::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 2px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--two{
+            position: relative;
+        }
+
+        .box--two::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 2px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--two::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 59px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--three{
+            position: relative;
+        }
+
+        .box--three::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 2px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--three::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 59px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--four{
+            position: relative;
+        }
+
+        .box--four::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 100px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--four::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 59px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--five{
+            position: relative;
+        }
+
+        .box--five::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 59px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--five::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 2px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--six{
+            position: relative;
+        }
+
+        .box--six::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 2px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--six::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 2px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--seven{
+            position: relative;
+        }
+
+        .box--seven::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 30px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--seven::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 2px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--eight{
+            position: relative;
+        }
+
+        .box--eight::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            width: 21px;
+            height: 2px;
+            background-color: $pink-color;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .box--eight::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 37px;
+            width: 21px;
+            height: 23px;
+            background-color: $violet-color;
+            border-radius: 5px 5px 0 0;
+        }
 }
 
 
