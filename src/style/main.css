@@ -949,9 +949,90 @@ textarea {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: audience__image;
-  width: 100%;
-  height: 100%;
-  background: url(../img/charts/audience__reach.jpg) no-repeat center;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (30px)[5];
+      grid-template-rows: repeat(5, 30px);
+  -ms-grid-columns: 50px (91px)[7];
+      grid-template-columns: 50px repeat(7, 91px);
+  margin-top: 20px;
+  font-size: 12px;
+  color: #4F4F4F;
+}
+
+.reach__audience .audience__image::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  width: 641px;
+  height: 120px;
+  background: url(../img/charts/audience.svg) no-repeat center;
+  z-index: 5;
+}
+
+.reach__audience .audience__grid-box {
+  position: relative;
+  border: 1px solid #EFF3F9;
+}
+
+.reach__audience .grid__text {
+  position: absolute;
+  right: -2px;
+  top: -7px;
+}
+
+.reach__audience .audience__grid-box:nth-child(8n + 1) {
+  border: none;
+}
+
+.reach__audience .audience__grid-box:first-child {
+  text-align: right;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.reach__audience .grid--data {
+  position: relative;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.reach__audience .grid--data::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 5px;
+  height: 1px;
+  background-color: #4f4f4f;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.reach__audience .grid--data::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 5px;
+  height: 1px;
+  background-color: #4f4f4f;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.reach__audience .data__text {
+  position: absolute;
+  top: 10px;
+}
+
+.reach__audience .data__text--last {
+  position: absolute;
+  top: 10px;
+  right: -35px;
 }
 
 .reach__by-device {
@@ -1559,7 +1640,6 @@ textarea {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: audience;
-    overflow-x: auto;
   }
   .reachs .reach__by-device {
     -ms-grid-row: 3;
