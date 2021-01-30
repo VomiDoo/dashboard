@@ -1,3 +1,3 @@
 # dashboard
 
- https://vomidoo.github.io/dashboard/
+https://vomidoo.github.io/dashboard/
