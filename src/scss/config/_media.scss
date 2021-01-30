@@ -1,7 +1,6 @@
 @media (max-width: 768px){
 
     .wrap{
-        // max-height: 100vh;
         margin: 0 auto;
         grid-template: 60px 1fr / 100%;
         grid-template-areas: 'nav'
@@ -176,12 +175,14 @@
         grid-area: header;
         display: grid;
         width: 100%;
+        margin: 0;
         padding: 10px;
         grid-template: 100% / 1fr 1fr 1fr;
         grid-template-areas: 'header__title header__search name';
 
         .header__title{
             grid-area: header__title;
+            align-self: center;
             text-align: left;
         }
 
