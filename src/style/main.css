@@ -981,6 +981,42 @@ textarea {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: gender__inform;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+  font-size: 12px;
+}
+
+.gender .gender__women {
+  position: relative;
+}
+
+.gender .gender__women::before {
+  content: '';
+  position: absolute;
+  right: 50px;
+  width: 15px;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #E786D7;
+}
+
+.gender .gender__men {
+  position: relative;
+}
+
+.gender .gender__men::before {
+  content: '';
+  position: absolute;
+  right: 30px;
+  width: 15px;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #7F7FD5;
 }
 
 .gender .gender__image {
@@ -988,6 +1024,7 @@ textarea {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: gender__image;
+  background: url(../img/charts/gender-age.svg) no-repeat;
 }
 
 .geo {

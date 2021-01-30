@@ -24,10 +24,43 @@
 
     .gender__inform{
         grid-area: gender__inform;
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .gender__women{
+        position: relative;
+    }
+
+    .gender__women::before{
+        content: '';
+        position: absolute;
+        right: 50px;
+        width: 15px;
+        height: 16px;
+        border-radius: 5px;
+        background-color: $pink-color;
+    }
+
+    .gender__men{
+        position: relative;
+    }
+
+    .gender__men::before{
+        content: '';
+        position: absolute;
+        right: 30px;
+        width: 15px;
+        height: 16px;
+        border-radius: 5px;
+        background-color: $violet-color;
     }
 
     .gender__image{
         grid-area: gender__image;
+        background: url(../img/charts/gender-age.svg) no-repeat;
     }
 }
 

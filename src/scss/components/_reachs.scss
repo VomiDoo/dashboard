@@ -5,12 +5,6 @@
     display: grid;
     grid-template: 242px / 768px 32px 288px;
     grid-template-areas: 'audience . by-device';
-
-    .reachs__title{
-        font-size: 20px;
-        font-weight: $font-width-semi-bold;
-    }
-
 }
 
 .reach__audience{
@@ -23,6 +17,11 @@
     grid-template: 20px 1fr / 372px 1fr;
     grid-template-areas: 'audience__title audience__form'
                          'audience__image audience__image';
+
+    .audience__title{
+        @include title;
+        grid-area: audience__title;
+    }
     
     .reach__data{
         cursor: pointer;
@@ -51,15 +50,11 @@
         }
     }
 
-    .audience__drid-name{
-        grid-area: audience__title;
-    }
-
     .audience__image{
         grid-area: audience__image;
         width: 100%;
         height: 100%;
-        background: url(/src/img/charts/audience__reach.jpg) no-repeat center;
+        background: url(../img/charts/audience__reach.jpg) no-repeat center;
     }
 }
 
@@ -73,7 +68,8 @@
     grid-template-areas: 'by-device__title by-device__title'
                          'by-device__image by-device__inform';
 
-    .by-device__grid-name{
+    .by-device__title{
+        @include title;
         grid-area: by-device__title;
     }
 
@@ -88,22 +84,22 @@
         top: 10%;
         width: 121px;
         height: 121px;
-        background: url(/src/img/charts/device-circle.svg) no-repeat center;
+        background: url(../img/charts/device-circle.svg) no-repeat center;
     }
 
     .by-device__image::after{
         content: '';
         position: absolute;
-        top: 15%;
+        top: 17%;
         left: 50%;
         width: 61px;
         height: 47px;
-        background: url(/src/img/charts/device-triangle.svg) no-repeat center;
+        background: url(../img/charts/device-triangle.svg) no-repeat center;
     }
 
     .violet-percent{
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 15%;
         font-size: 12px;
         color: #FDFDFF;
@@ -111,7 +107,7 @@
 
     .pink-percent{
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 70%;
         font-size: 12px;
         color: #FDFDFF;
