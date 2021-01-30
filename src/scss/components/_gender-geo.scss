@@ -13,6 +13,7 @@
     padding: 23px 35px 1.5px 24px;
     background: $white-color;
     border-radius: 13px;
+    overflow-x: auto;
     grid-template: 40px 1fr / 194px 335px 1fr;
     grid-template-areas: 'gender__title . gender__inform'
                          'gender__image gender__image gender__image';

@@ -2,8 +2,8 @@
 .wrap{
     position: relative;
     display: grid;
-    width: 1280px;
-    height: 880px;
+    max-width: 1280px;
+    min-height: 880px;
     margin: 5% auto;
     font-family: 'Poppins', sans-serif;
     background-color: #EFF3F9;
