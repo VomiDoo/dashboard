@@ -462,32 +462,32 @@ textarea {
 }
 
 .nav .nav__button--home {
-  background: url(/src/img/nav__button/home.svg) no-repeat center;
+  background: url(../img/nav__button/home.svg) no-repeat center;
 }
 
 .nav .nav__button--news {
-  background: url(/src/img/nav__button/news.svg) no-repeat center;
+  background: url(../img/nav__button/news.svg) no-repeat center;
 }
 
 .nav .nav__button--friends {
-  background: url(/src/img/nav__button/friends.svg) no-repeat center;
+  background: url(../img/nav__button/friends.svg) no-repeat center;
 }
 
 .nav .nav__button--message {
-  background: url(/src/img/nav__button/message.svg) no-repeat center;
+  background: url(../img/nav__button/message.svg) no-repeat center;
 }
 
 .nav .nav__button--music {
-  background: url(/src/img/nav__button/music.svg) no-repeat center;
+  background: url(../img/nav__button/music.svg) no-repeat center;
 }
 
 .nav .nav__button--statistic {
-  background: url(/src/img/nav__button/statistic.svg) no-repeat center;
+  background: url(../img/nav__button/statistic.svg) no-repeat center;
   border-left: 5px solid #7F7FD5;
 }
 
 .nav .nav__button--settings {
-  background: url(/src/img/nav__button/settings.svg) no-repeat center;
+  background: url(../img/nav__button/settings.svg) no-repeat center;
 }
 
 .nav .nav__img {
@@ -524,7 +524,7 @@ textarea {
   left: 5px;
   width: 20px;
   height: 20px;
-  background: url(/src/img/nav__button/moon.svg) no-repeat center, #7F7FD5;
+  background: url(../img/nav__button/moon.svg) no-repeat center, #7F7FD5;
   border-radius: 50%;
   -webkit-transition: .6s;
   transition: .6s;
@@ -542,7 +542,7 @@ textarea {
   right: 5px;
   width: 20px;
   height: 20px;
-  background: url(/src/img/nav__button/circle.svg) no-repeat center, #FDFDFF;
+  background: url(../img/nav__button/circle.svg) no-repeat center, #FDFDFF;
   border-radius: 50%;
   -webkit-transition: .6s;
   transition: .6s;
@@ -656,7 +656,7 @@ textarea {
 .header .header__search .header__button {
   width: 38px;
   height: 100%;
-  background: url(/src/img/header/search.svg) no-repeat center, #FDFDFF;
+  background: url(../img/header/search.svg) no-repeat center, #FDFDFF;
   cursor: pointer;
   outline: none;
   border: none;
@@ -677,7 +677,7 @@ textarea {
   left: 190px;
   width: 22px;
   height: 22px;
-  background: url(/src/img/header/bell.svg) no-repeat center;
+  background: url(../img/header/bell.svg) no-repeat center;
   cursor: pointer;
 }
 
@@ -699,7 +699,7 @@ textarea {
   left: 80px;
   width: 50px;
   height: 50px;
-  background: url(/src/img/header/avatar-anya.svg) no-repeat center;
+  background: url(../img/header/avatar-anya.svg) no-repeat center;
 }
 
 .header .name::after {
@@ -708,7 +708,7 @@ textarea {
   left: 150px;
   width: 8px;
   height: 4px;
-  background: url(/src/img/header/dropdown.svg) no-repeat center;
+  background: url(../img/header/dropdown.svg) no-repeat center;
   cursor: pointer;
 }
 

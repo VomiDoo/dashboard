@@ -40,32 +40,32 @@
 
 
     .nav__button--home{
-        background: url(/src/img/nav__button/home.svg) no-repeat center;
+        background: url(../img/nav__button/home.svg) no-repeat center;
     }
 
     .nav__button--news{
-        background: url(/src/img/nav__button/news.svg) no-repeat center;
+        background: url(../img/nav__button/news.svg) no-repeat center;
     }
 
     .nav__button--friends{
-        background: url(/src/img/nav__button/friends.svg) no-repeat center;
+        background: url(../img/nav__button/friends.svg) no-repeat center;
     }
 
     .nav__button--message{
-        background: url(/src/img/nav__button/message.svg) no-repeat center;
+        background: url(../img/nav__button/message.svg) no-repeat center;
     }
 
     .nav__button--music{
-        background: url(/src/img/nav__button/music.svg) no-repeat center;
+        background: url(../img/nav__button/music.svg) no-repeat center;
     }
 
     .nav__button--statistic{
-        background: url(/src/img/nav__button/statistic.svg) no-repeat center;
+        background: url(../img/nav__button/statistic.svg) no-repeat center;
         border-left: 5px solid $violet-color;
     }
 
     .nav__button--settings{
-        background: url(/src/img/nav__button/settings.svg) no-repeat center;
+        background: url(../img/nav__button/settings.svg) no-repeat center;
     }
 
     .nav__img{
@@ -101,7 +101,7 @@
         left: 5px;
         width: 20px;
         height: 20px;
-        background: url(/src/img/nav__button/moon.svg) no-repeat center, $violet-color;
+        background: url(../img/nav__button/moon.svg) no-repeat center, $violet-color;
         border-radius: 50%;
         transition: .6s;
     }
@@ -117,7 +117,7 @@
         right: 5px;
         width: 20px;
         height: 20px;
-        background: url(/src/img/nav__button/circle.svg) no-repeat center, $white-color;
+        background: url(../img/nav__button/circle.svg) no-repeat center, $white-color;
         border-radius: 50%;
         transition: .6s;
         transform: translateX(50px);
