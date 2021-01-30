@@ -135,7 +135,7 @@
             overflow-x: auto;
         }
 
-        .reachs__by-device{
+        .reach__by-device{
             grid-area: by-device;
             width: 99%;
         }
@@ -162,18 +162,103 @@
 
 @media (height: 1024px){
 
+    .container{
+        grid-gap: 20px 10px;
+        grid-template: 90px 316px 1fr 1fr / 100%;
+        grid-template-areas: 'header'
+                             'cards'
+                             'reachs'
+                             'gender-geo';
+    }
+    
 
     .header{
-        display: flex;
-        justify-content: space-between;
+        grid-area: header;
+        display: grid;
         width: 100%;
+        padding: 10px;
+        grid-template: 100% / 1fr 1fr 1fr;
+        grid-template-areas: 'header__title header__search name';
+
+        .header__title{
+            grid-area: header__title;
+            text-align: left;
+        }
 
         .name{
-            margin: 0;
+            grid-area: name;
+        }
+
+        .name::after{
+            display: block;
+            left: 100px;
         }
 
         .header__search{
+            grid-area: header__search;
             margin-right: 0;
         }
     }
+
+    .cards{
+        grid-area: cards;
+        display: grid;
+        max-height: 316px;
+        grid-gap: 20px 10px ;
+        grid-template: 148px 148px / 1fr 1fr;
+        grid-template-areas: 'friends visitors'
+                             'followers followers';
+        
+        .card--friends{
+            grid-area: friends;
+            margin: 0;
+        }
+
+        .card--visitors{
+            grid-area: visitors;
+            margin: 0;
+        }
+
+        .card--followers{
+            grid-area: followers;
+            margin: 0;
+        }
+    }
+
+    .reachs{
+        grid-area: reachs;
+
+        .reach__by-device{
+            position: relative;
+            width: 50%;
+        }
+
+        .reach__by-device::before{
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 400px;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background: linear-gradient($violet-color, $pink-color);
+            border-radius: 50%;
+        }
+        .reach__by-device::after{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 500px;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            background: linear-gradient(0.25turn ,$violet-color, $pink-color);
+            border-radius: 50%;
+        }
+    }
+
+    .gender-geo{
+        grid-area: gender-geo;
+    }
+    
 }
