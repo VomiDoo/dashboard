@@ -2,6 +2,8 @@
 
     .wrap{
         margin: 0 auto;
+        width: 100vw;
+        overflow-x: hidden;
         grid-template: 60px 1fr / 100%;
         grid-template-areas: 'nav'
                              'main';
@@ -61,7 +63,7 @@
         grid-area: main;
         width: 100%;
         padding: 10px;
-        grid-template: 137px 1fr 1fr 32px 1fr / 100%;
+        grid-template: 137px 1fr 1fr 32px 1.5fr / 100%;
         grid-template-areas: 'header'
                              'cards'
                              'reachs'
@@ -153,6 +155,28 @@
         .geo{
             grid-area: geo;
             width: 99%;
+            height: 422px;
+            grid-template: 50px 1fr 1fr/ 50% 50%;
+            grid-template-areas: 'geo__title geo__subtitle'
+                                 'geo__rum geo__rum'
+                                 'geo__cuo geo__cuo';
+        }
+
+        .geo__title{
+            grid-area: geo__title;
+        }
+
+        .geo__subtitle{
+            grid-area: geo__subtitle;
+        }
+
+        .geo__rum{
+            grid-area: geo__rum;
+        }
+
+        .geo__cuo{
+            grid-area: geo__cuo;
+            width: 100%;
         }
     }
 }    

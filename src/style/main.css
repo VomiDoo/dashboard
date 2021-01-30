@@ -613,6 +613,7 @@ textarea {
   display: -ms-grid;
   display: grid;
   padding-left: 50px;
+  overflow-x: hidden;
   -ms-grid-rows: 137px 148px 32px 242px 32px 242px;
   -ms-grid-columns: 100%;
       grid-template: 137px 148px 32px 242px 32px 242px / 100%;
@@ -1498,6 +1499,8 @@ textarea {
 @media (max-width: 768px) {
   .wrap {
     margin: 0 auto;
+    width: 100vw;
+    overflow-x: hidden;
     -ms-grid-rows: 60px 1fr;
     -ms-grid-columns: 100%;
         grid-template: 60px 1fr / 100%;
@@ -1561,9 +1564,9 @@ textarea {
     grid-area: main;
     width: 100%;
     padding: 10px;
-    -ms-grid-rows: 137px 1fr 1fr 32px 1fr;
+    -ms-grid-rows: 137px 1fr 1fr 32px 1.5fr;
     -ms-grid-columns: 100%;
-        grid-template: 137px 1fr 1fr 32px 1fr / 100%;
+        grid-template: 137px 1fr 1fr 32px 1.5fr / 100%;
         grid-template-areas: 'header' 'cards' 'reachs' '.' 'gender-geo';
   }
   .header {
@@ -1666,6 +1669,34 @@ textarea {
     -ms-grid-column: 1;
     grid-area: geo;
     width: 99%;
+    height: 422px;
+    -ms-grid-rows: 50px 1fr 1fr;
+    -ms-grid-columns: 50% 50%;
+        grid-template: 50px 1fr 1fr/ 50% 50%;
+        grid-template-areas: 'geo__title geo__subtitle' 'geo__rum geo__rum' 'geo__cuo geo__cuo';
+  }
+  .gender-geo .geo__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: geo__title;
+  }
+  .gender-geo .geo__subtitle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: geo__subtitle;
+  }
+  .gender-geo .geo__rum {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: geo__rum;
+  }
+  .gender-geo .geo__cuo {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: geo__cuo;
+    width: 100%;
   }
 }
 
